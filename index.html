@@ -1,50 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <title>IGS Dashboard Portal</title>
 
 <style>
 body{
-font-family: Arial;
-background:#f5f6fa;
+font-family:Arial;
+background:#0f172a;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+margin:0;
+}
+
+.container{
 text-align:center;
-padding:80px;
 }
 
-h1{
-margin-bottom:40px;
-}
-
-.btn{
-display:inline-block;
-padding:20px 40px;
+button{
+width:260px;
+padding:20px;
 margin:20px;
 font-size:20px;
-background:#2f80ed;
-color:white;
-text-decoration:none;
-border-radius:8px;
+border:none;
+border-radius:10px;
+cursor:pointer;
 }
 
-.btn:hover{
-background:#1366d6;
+.online{
+background:#4f46e5;
+color:white;
+}
+
+.commercial{
+background:#f59e0b;
+color:white;
+}
+
+button:hover{
+transform:scale(1.05);
 }
 </style>
-
 </head>
 
 <body>
 
-<h1>DataInsight Dashboard Portal</h1>
+<div class="container">
 
-<a class="btn" href="online.html">
-線上遊戲 Dashboard
-</a>
+<h1>IGS DataInsight Dashboard</h1>
 
-<a class="btn" href="commercial.html">
-商用專案 Dashboard
-</a>
+<p>選擇系統</p>
+
+<br>
+
+<button class="online"
+onclick="location.href='online.html'">
+線上遊戲專案
+</button>
+
+<br>
+
+<button class="commercial"
+onclick="location.href='commercial.html'">
+商用遊戲專案
+</button>
+
+</div>
 
 </body>
 </html>
